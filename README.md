@@ -8,8 +8,6 @@ The Android Hardbrick script is a tool to brick Android devices.
 ## Features
 - Hardbricks your android.
 - Will support a wide range of device models and firmware versions someday. Except for samsung. It won't work on samsungs.
-- .
-- Provides options for data preservation during the recovery process.
 
 ## Prerequisites
 - Wanting to turn your device into e-waste.
