@@ -18,7 +18,7 @@ The Android Hardbrick script is a tool to brick Android devices.
 
 ## Installation
 1. go to releases and download it
-2.make sure you have platform tools installed
+ 2.make sure you have platform tools installed
 ## Usage
 1. Open the script.
 2. Have an unlocked bootloader, if not, the script will do it for you
