@@ -3,7 +3,7 @@
 echo ---------------------------------------------------------
 echo WARNING: This script is designed for devices with an unlocked bootloader.
 echo Attempting to run this script on devices with a locked bootloader does not have any effect.
-echo Proceed with caution and make sure your device's bootloader is unlocked.
+echo Proceed with caution and make sure your device's bootloader is unlocked. 
 echo ---------------------------------------------------------
 echo.
 
@@ -130,4 +130,5 @@ fastboot format modem
 fastboot oem lock
 
 echo If your bootloader was unlocked, congratulations! You now have e-waste! (i tested this and it works)
-echo If your device didn't work with this, maybe you got the wrong version
+echo If your device didn't work with this, maybe you got the wrong version.
+echo I put all my free time into this!
