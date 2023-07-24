@@ -1,6 +1,6 @@
 # Android Hardbrick Script
 
-> **Disclaimer:** This script maybe will brick your device. Don't do this to a phone you care about. And if you didn't read this and point the finger at me, well i don't care, you should have listened.
+> **Disclaimer:** This script maybe will brick your device. Well that's the entire point. Anyway, don't do this to a phone you care about. And if you didn't read this and point the finger at me, well i don't care, you should have listened.
 
 ## Introduction
 The Android Hardbrick script is a tool to brick Android devices. 
