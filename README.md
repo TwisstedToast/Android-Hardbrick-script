@@ -23,9 +23,9 @@ The Android Hardbrick script is a tool to brick Android devices.
 4. If it doesn't, look in the next section.
 
 ## Troubleshooting and Support
-If you encounter any issues or have questions, you can either:
-- Complain in the issues tab. 
-- Contact us at hardbrickscript@gmail.com for further assistance. (dont ask why i have a email just for that)
+If you encounter any issues (like your phone booting to life) or have questions, you can either:
+- Complain in the issues tab. Make sure to say your phone and model. As i said before, Samsung phones aren't supported yet.
+- Only do so if your phone still booted.
 
 > **Note:** As i said before, don't use this with an android phone you care about.
 
