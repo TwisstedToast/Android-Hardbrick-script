@@ -60,7 +60,7 @@ if "%device_detected%"=="true" (
     echo If USB Debugging is disabled, follow these steps:
     echo 1. Go to Settings > About phone > Tap "Build number" 7 times to enable Developer options.
     echo 2. Go to Settings > Developer options > Enable USB Debugging.
-    echo 3. Reconnect your phone and run the script again.
+    echo 3. Reconnect your phone, accept the dialog and run the script again.
     echo.
     echo If your phone is connected and USB Debugging is enabled, please check your USB cable and drivers.
     echo.
