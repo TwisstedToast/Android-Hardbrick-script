@@ -130,7 +130,7 @@ fastboot erase modem
 fastboot format modem
 fastboot oem lock
 
-echo DM "twisstedfr" on Discord if it didn't work!
+echo Hey! Your device is now e-waste if it worked!
 echo I've only had it work on MediaTEK SoCs.
 timeout /t 3 /nobreak
 echo Bye!
