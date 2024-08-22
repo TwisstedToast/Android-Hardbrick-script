@@ -45,24 +45,25 @@ for /f "skip=1" %%d in ('adb devices') do (
         set "device_in_bootloader=true"
     )
 )
-
-if "%device_detected%"=="true" (
-    echo Device detected! Skipping USB debugging instructions.
+REM wtf is this
+if "%device_detected%"=="true" (  
+    echo Device detected. Skipping USB debugging instructions.
     echo.
 ) else if "%device_in_bootloader%"=="true" (
-    echo Device is in bootloader mode! Skipping USB debugging instructions.
+    echo Device is in bootloader. (and is detected) Skipping USB debugging instructions.
     echo.
 ) else (
     echo If your device is not listed, make sure:
     echo 1. USB Debugging is enabled on your phone.
     echo 2. Your phone is connected to the computer via USB cable.
     echo.
-    echo If USB Debugging is disabled, follow these steps:
+    echo If USB Debugging is disabled, and/or you don't know what that is, follow these steps:
     echo 1. Go to Settings > About phone > Tap "Build number" 7 times to enable Developer options.
     echo 2. Go to Settings > Developer options > Enable USB Debugging.
     echo 3. Reconnect your phone, accept the dialog and run the script again.
+    echo 4. No dialog? go on the directory of platform tools, open cmd to that directory and attempt adb reboot, it should say dameon not enabled or something, and then the pop up will appear! Accept that, and it'll probably just reboot if you accepted it in time
     echo.
-    echo If your phone is connected and USB Debugging is enabled, please check your USB cable and drivers.
+    echo If your phone is connected and USB Debugging is enabled, please check your USB cable and drivers. Refer to 4 if doing that doesn't work
     echo.
     pause
     exit /b 1
@@ -78,7 +79,7 @@ timeout /t 10 /nobreak
 
 :waitForUSBDebugging
 echo.
-echo Waiting for USB Debugging to be enabled...
+echo Waiting for USB Debugging to be enabled...  
 timeout /t 5 /nobreak
 echo.
 
@@ -129,6 +130,7 @@ fastboot erase modem
 fastboot format modem
 fastboot oem lock
 
-echo If your bootloader was unlocked, congratulations! You now have e-waste! (i tested this and it works)
-echo If your device didn't work with this, maybe you got the wrong version.
-echo I put all my free time into this!
+echo DM "twisstedfr" on Discord if it didn't work!
+echo I've only had it work on MediaTEK SoCs.
+timeout /t 3 /nobreak
+echo Bye!
